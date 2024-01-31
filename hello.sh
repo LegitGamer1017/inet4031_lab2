@@ -1,8 +1,9 @@
-              #!/bin/bash
-              
-              a=2
-              b=2
-              c=$((a + b))
-              
-              echo "Bash says: Hello, World!"
-              echo "$a + $b = $c"
+#!/bin/bash
+
+users=("User1" "User2" "User3")
+
+echo "Bash says: Hello, World!"
+for user in "${users[@]}"; do
+    echo "$user"
+done
+
